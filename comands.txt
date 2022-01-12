@@ -1,0 +1,2 @@
+To start the server - enter in the progect folder and run >
+- gatsby develop
