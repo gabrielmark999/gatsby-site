@@ -30,10 +30,13 @@ const Layout = ({ pageTitle, children }) => {
                 <Link to="/" className={navLinkText}>Home</Link>
             </li>
             <li className={navLinkItem}>
-              <Link to="/about" className={navLinkText}>About</Link>
+              <Link to="/administrativo" className={navLinkText}>Administrativo</Link>
             </li>
-            <li className={navLinks}>
-              <Link to="/blog" className={navLinkText}>Blog</Link>    
+            <li className={navLinkItem}>
+              <Link to="/franqueado" className={navLinkText}>Franqueado</Link>    
+            </li>
+            <li className={navLinkItem}>
+              <Link to="/lojista" className={navLinkText}>Lojista</Link>
             </li>
         </ul>
       </nav>
