@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
-import Layout from '../../components/layout'
+import SubLayout from '../../components/sub-layout';
 
-const BlogPage = ({ data }) => {
+const FranchPage = ({ data }) => {
   return (
-    <Layout pageTitle="My Blog Posts">
+    <SubLayout pageTitle="Portal da Franquia">
       {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
@@ -13,11 +13,11 @@ const BlogPage = ({ data }) => {
                 {node.frontmatter.title}
               </Link>
               </h2>
-            <p>Posted: {node.frontmatter.date}</p>
+            <p>Postado em: {node.frontmatter.date}</p>
           </article>
         ))
       }
-    </Layout>
+    </SubLayout>
   )
 }
 
@@ -26,7 +26,7 @@ export const query = graphql`
     allMdx(sort: {fields: frontmatter___date, order: DESC}) {
       nodes {
         frontmatter {
-          date(formatString: "MMMM D, YYYY")
+          date(formatString: "DD-MM-YYYY")
           title
         }
         id
@@ -36,4 +36,4 @@ export const query = graphql`
   }
 `
 
-export default BlogPage
+export default FranchPage

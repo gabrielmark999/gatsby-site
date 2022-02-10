@@ -1,16 +1,13 @@
-// Step 1: Import React
 import * as React from 'react'
 import { Link } from "gatsby";
-import Layout from '../../components/layout';
+import SubLayout from '../../components/sub-layout';
 
-// Step 2: Define your component
-const AboutPage = () => {
+const StorePage = () => {
   return (
-    <Layout pageTitle="About Me">
-        <p>Hello, I'm following the Gatsby tutorial for teach me?</p>
-    </Layout>
+    <SubLayout pageTitle="Portal do Lojista">
+        <p>Esta é a página para o lojista</p>
+    </SubLayout>
   )
 }
 
-// Step 3: Export your component
-export default AboutPage
+export default StorePage

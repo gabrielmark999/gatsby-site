@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: "My First Menu site",
+        title: "Menu46 | Suporte",
     },
     plugins: [
         "gatsby-plugin-image",
